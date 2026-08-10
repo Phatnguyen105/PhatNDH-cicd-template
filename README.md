@@ -84,3 +84,11 @@ Run:
 cd /opt/capstone
 ./deploy.sh
 ```
+
+
+ssh -i "$HOME\.ssh\tripsense-dev-vm-key.pem" azureuser@20.198.225.52
+cd ~/actions-runner
+
+sudo ./svc.sh install
+sudo ./svc.sh start
+sudo ./svc.sh status
